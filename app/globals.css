@@ -7,79 +7,100 @@
     @apply fixed inset-0 pointer-events-none;
     background-image: radial-gradient(
       circle at var(--mouse-x) var(--mouse-y),
-      rgba(63, 81, 181, 0.3) 0%,
-      rgba(63, 81, 181, 0.15) 30%,
-      rgba(63, 81, 181, 0) 50%
+      rgba(255, 153, 102, 0.15) 0%,   /* soft ember core */
+      rgba(128, 43, 0, 0.10) 30%,     /* warm muted orange */
+      rgba(50, 15, 5, 0) 50%          /* fade into dark background */
     );
 
-    /* Media query for touch devices */
     @media (hover: none) and (pointer: coarse) {
       background-image: radial-gradient(
         circle at top left,
-        rgba(63, 81, 181, 0.3) 0%,
-        rgba(63, 81, 181, 0.15) 30%,
-        rgba(63, 81, 181, 0) 50%
+        rgba(255, 153, 102, 0.15) 0%,
+        rgba(128, 43, 0, 0.10) 30%,
+        rgba(50, 15, 5, 0) 50%
       );
     }
   }
 }
 
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 50% 10%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 50% 10%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 50% 10%;
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
-    --radius: 1rem;
+    --background: 30 6% 10%; /* Dark grunge brown */
+    --foreground: 36 14% 88%; /* Bone white */
+    --card: 0 5% 12%; /* Very dark muted red-brown */
+    --card-foreground: 36 14% 88%;
+
+    --popover: 0 5% 12%;
+    --popover-foreground: 36 14% 88%;
+
+    --primary: 0 65% 23%; /* deep blood red */
+    --primary-foreground: 36 14% 92%;
+
+    --accent: 0 45% 20%;  /* almost blackened red */
+    --accent-foreground: 36 14% 90%;
+
+    --secondary: 240 3% 18%; /* charcoal */
+    --secondary-foreground: 36 14% 90%;
+
+    --muted: 0 10% 30%;
+    --muted-foreground: 36 10% 65%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 36 14% 95%;
+
+    --border: 0 10% 20%;
+    --input: 0 10% 20%;
+    --ring: 0 65% 23%;
+
+
+    --radius: 0.75rem;
   }
 
   .dark {
-    --background: 222.2 50% 10%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 50% 10%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 50% 10%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 48%;
+    --background: 30 6% 10%;
+    --foreground: 36 14% 88%;
+    --card: 0 5% 12%;
+    --card-foreground: 36 14% 88%;
+
+    --popover: 0 5% 12%;
+    --popover-foreground: 36 14% 88%;
+
+    --primary: 0 65% 23%; /* deep blood red */
+    --primary-foreground: 36 14% 92%;
+
+    --accent: 0 45% 20%;  /* almost blackened red */
+    --accent-foreground: 36 14% 90%;
+
+    --secondary: 240 3% 18%; /* charcoal */
+    --secondary-foreground: 36 14% 90%;
+
+    --muted: 0 10% 30%;
+    --muted-foreground: 36 10% 65%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 36 14% 95%;
+
+    --border: 0 10% 20%;
+    --input: 0 10% 20%;
+    --ring: 0 65% 23%;
   }
 }
+
 
 @layer base {
   * {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background-image: url('/background.png'); /* path relative to /public folder */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
-
 .nav-indicator {
   display: inline-block;
   vertical-align: middle;
@@ -94,14 +115,14 @@
 .group:focus-within .nav-indicator {
   width: 4rem;
   height: 2px;
-  background-color: #0d1426;
+  background-color: #420705;
 }
 
 .nav-indicator.active,
 .group .nav-indicator.active {
   width: 4rem;
   height: 2px;
-  background-color: #0d1426;
+  background-color: #550f03;
 }
 
 .dark .group:hover .nav-indicator,
