@@ -12,99 +12,73 @@ import { MoveRight } from "lucide-react";
 
 const jobPositions = [
   {
-    timeline: "Aug 2024 — Present",
-    currentPosition: "Founding Designer & Head of Product Design",
-    place: "Stealth AI Startup",
+    timeline: "Jun 2024 — Present",
+    currentPosition: "Founder & Developer",
+    place: "PhantomKey",
     previousPositions: [""],
     description:
-      "Establishing and leading the design team for a Stealth AI Startup set to bring the New Era of Money. My role involves founding and leading the design team, setting the vision and standards for design excellence, direct branding and actively contributing to hands-on product design for going to market.",
+      "Building PhantomKey, a lightweight deception tool for cybersecurity that plants fake credentials and secrets across systems to detect adversarial activity. Focused on blending behavioral detection with practical security automation to empower defenders.",
     skills: [
-      "Brand Identity",
-      "Product Design",
-      "UI/UX Design",
-      "Design Systems",
-      "Design Strategy",
-      "Team Leadership",
+      "Cybersecurity",
+      "Deception Technology",
+      "Python",
+      "Bash",
+      "Linux",
+      "Tor Networking",
+      "SIEM Integration",
+      "Open Source",
+      "Threat Intelligence",
     ],
   },
   {
-    timeline: "Mar 2024 — Present",
-    currentPosition: "Head of Product Design",
-    place: "Vela Exchange",
-    previousPositions: ["Designer and Front-end Developer"],
-    description:
-      "Leading the design team for Vela Exchange, a community-first, decentralized perpetuals trading platform. My role involves setting the vision and standards for design excellence, and actively contributing to hands-on product design.",
-    skills: [
-      "Product Design",
-      "UI/UX Design",
-      "Design Systems",
-      "Design Strategy",
-      "Team Leadership",
-    ],
-  },
-  {
-    timeline: "Feb 2022 — Presents",
-    currentPosition: "Co-founder, Designer & Developer",
-    place: "Swoop Exchange",
+    timeline: "Jun 2024 — Sep 2024",
+    currentPosition: "Fraud Detection & Investigation Analyst Lead",
+    place: "PNC Bank",
     previousPositions: [""],
     description:
-      "Co-founded, designed, and developed a Next-Gen Decentralized Exchange from MVP to launch, scaling from zero to over $10M in trading volume. Swoop Exchange is powered by a novel Meta-Aggregation Engine that leverages sophisticated routing algorithms and APIs to automatically route trades from the most profitable liquidity sources, vastly improving swap efficiency and user experience.",
+      "Analyzed cases generated from enterprise fraud detection systems, researched and reported suspicious activities, and maintained proper documentation. Collaborated with internal and external stakeholders to coordinate investigative efforts.",
     skills: [
-      "Typescript",
-      "JavaScript",
-      "CSS",
-      "Tailwind CSS",
-      "MUI",
-      "HTML",
-      "Figma",
-      "UI/UX Design",
-      "Blockchain tech",
-      "Project Management",
-      "Planning",
-      "Leadership",
-      "Testing & QA",
+      "Fraud Analysis",
+      "Stakeholder Communication",
+      "Enterprise Monitoring",
+      "Data Analysis",
+      "Financial Compliance",
     ],
   },
   {
-    timeline: "Aug 2016 — Mar 2024",
-    currentPosition: "Head of QA",
-    place: "Lykomitros Steel",
-    previousPositions: [
-      "Quality Assurance Engineer",
-      "QA/QC Administrative Support",
-    ],
-    description:
-      "Lead the QA department, focusing on renewable energy components in steel manufacturing. Maintained industry and client standards, ensuring product integrity for renewable energy.",
-    skills: [
-      "ISO Compliance",
-      "Quality Assurance",
-      "Engineering Management",
-      "ISO 9001",
-      "ISO 45001",
-      "ISO 14001",
-      "Requirement Assessment",
-      "Auditing",
-    ],
-  },
-  {
-    timeline: "Nov 2013 - May 2014",
-    currentPosition: "Digital Systems Admin - Internship",
-    place: "OTE Group (HTO)",
+    timeline: "Jan 2024 — Apr 2024",
+    currentPosition: "Data Analyst",
+    place: "Think Data Solutions LLC.",
     previousPositions: [""],
     description:
-      "Gained valuable experience in digital systems administration, focusing on the management of contractors and capital.",
+      "Streamlined contact collection processes, led team retrospectives and weekly executive summaries, and developed high-level communication and client-facing skills.",
     skills: [
-      "SQL",
-      "Administration",
-      "Problem-Solving",
-      "Computer Systems",
-      "System documentation",
-      "Networking",
-      "Cloud Computing",
-      "Automation",
-      "Scripting",
+      "Data Analysis",
+      "Communication",
+      "Client Engagement",
+      "Process Improvement",
+      "Team Collaboration",
     ],
   },
+  {
+    timeline: "2024 — Present",
+    currentPosition: "SOC Analyst (Home Lab Experience)",
+    place: "Independent / Personal Lab",
+    previousPositions: [""],
+    description:
+      "Designed and maintained a personal SOC home lab. Simulated brute force attacks with Hydra, analyzed traffic with Wireshark, deployed Sysmon and forwarded logs to SIEM, and conducted red/blue team exercises using Kali Linux.",
+    skills: [
+      "SIEM",
+      "Hydra",
+      "Wireshark",
+      "Sysmon",
+      "Log Aggregation",
+      "IDS/IPS",
+      "Kali Linux",
+      "Endpoint Detection",
+      "Windows/Linux Forensics",
+    ],
+  }
 ];
 
 export default function ExpCard() {
@@ -149,7 +123,7 @@ export default function ExpCard() {
       </>
       <div className="lg:px-12 mt-12">
         <a
-          href="mailto:alexander@meikopoulos.com"
+          href="mailto:Haydenvictor@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center font-medium leading-tight text-foreground group"
