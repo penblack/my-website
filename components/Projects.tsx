@@ -27,8 +27,8 @@ const jobProjects = [
     link: "https://phantomkey.com",
   },
   {
-    imagePath: "/frolicana.png",
-    title: "Frolicana - Cybersecurity Startup",
+    imagePath: "/redshrew.png",
+    title: "Redshrew - Cybersecurity Startup",
     description:
       "A stealth-stage cybersecurity startup focused on building innovative, human-friendly security tools that blend deception, automation, and behavioral analytics. Currently in early development of research platforms and sensor-based traps.",
     skills: [
@@ -38,7 +38,7 @@ const jobProjects = [
       "Threat Detection",
       "Product Strategy",
     ],
-    link: "https://frolicana.com",
+    link: "https://redshrew.com",
   },
   {
     imagePath: "/homelab.png",
