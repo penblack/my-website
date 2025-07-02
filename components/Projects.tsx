@@ -53,7 +53,7 @@ const jobProjects = [
       "Sysmon",
       "SIEM",
     ],
-    link: "https://github.com/penblack/homelab",
+    link: "https://github.com/penblack/cybercraft",
   },
   {
      imagePath: "/Inkeeper.png",
