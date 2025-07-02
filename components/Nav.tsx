@@ -57,7 +57,7 @@ export default function Nav() {
           Hi, i&#39;m Hayden 👋
         </h1>
         <h2 className="text-xl lg:text-start">
-          CyberSecurity Engineer, developer, founder.
+          CyberSecurity Engineer, Data analyst, Founder.
         </h2>
         <p className="text-lg lg:text-start text-muted-foreground">
           I develop cybersecurity tools that blend deception, detection, and automation to protect systems from real-world threats.

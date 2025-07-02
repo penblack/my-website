@@ -14,20 +14,21 @@ const jobPositions = [
   {
     timeline: "Jun 2024 — Present",
     currentPosition: "Founder & Developer",
-    place: "PhantomKey",
+    place: "RedShrew Security Suite",
     previousPositions: [""],
     description:
-      "Building PhantomKey, a lightweight deception tool for cybersecurity that plants fake credentials and secrets across systems to detect adversarial activity. Focused on blending behavioral detection with practical security automation to empower defenders.",
+      "Founder and lead developer of RedShrew, a modular suite of open-source cybersecurity tools focused on deception, telemetry, and early threat detection. Created PhantomKey, the suite’s first utility, which plants fake credentials to catch adversarial behavior. Currently expanding RedShrew to include honeypots, trap-based telemetry, and alerting systems aimed at turning attacker behavior into actionable intelligence.",
     skills: [
       "Cybersecurity",
+      "Threat Detection",
       "Deception Technology",
       "Python",
-      "Bash",
       "Linux",
       "Tor Networking",
       "SIEM Integration",
       "Open Source",
       "Threat Intelligence",
+      "Security Automation",
     ],
   },
   {
@@ -78,7 +79,7 @@ const jobPositions = [
       "Endpoint Detection",
       "Windows/Linux Forensics",
     ],
-  }
+  },
 ];
 
 export default function ExpCard() {
