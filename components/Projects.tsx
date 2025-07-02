@@ -67,7 +67,7 @@ const jobProjects = [
       "Content Management",
       "Local Business Web Dev",
     ],
-    link: "https://georgiainnkeepers.com",
+    link: "https://gainnkeepers.com",
   },
   {
     imagePath: "/GhostToursUSA.png",
